@@ -1,0 +1,382 @@
+fileFormatVersion: 2
+guid: 01b6fc6be82655f4798abd5a5e31920c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1926191872501998083
+    second: run_xanh_0
+  - first:
+      213: 74921675075974844
+    second: run_xanh_1
+  - first:
+      213: -3287560407876719824
+    second: run_xanh_2
+  - first:
+      213: -5306836203281564384
+    second: run_xanh_3
+  - first:
+      213: 7043793876539579040
+    second: run_xanh_4
+  - first:
+      213: 2761698259413163707
+    second: run_xanh_5
+  - first:
+      213: -4501774006190014113
+    second: run_xanh_6
+  - first:
+      213: 568613953382617037
+    second: run_xanh_7
+  - first:
+      213: 3614924397805606386
+    second: run_xanh_8
+  - first:
+      213: -895895566827188581
+    second: run_xanh_9
+  - first:
+      213: 4866023758477227094
+    second: run_xanh_10
+  - first:
+      213: 1142738125056213776
+    second: run_xanh_11
+  - first:
+      213: 6601149976780127334
+    second: run_xanh_12
+  - first:
+      213: -8481618730340987050
+    second: run_xanh_13
+  - first:
+      213: 7067170241840754237
+    second: run_xanh_14
+  - first:
+      213: 9018195350920869064
+    second: run_xanh_15
+  - first:
+      213: -2842673883044015977
+    second: run_xanh_16
+  - first:
+      213: -4317371765037993812
+    second: run_xanh_17
+  - first:
+      213: 3025287290383427274
+    second: run_xanh_18
+  - first:
+      213: -7941780525333207245
+    second: run_xanh_19
+  - first:
+      213: 2662484855470696714
+    second: run_xanh_20
+  - first:
+      213: -7649981239361793026
+    second: run_xanh_21
+  - first:
+      213: -6227867318802050952
+    second: run_xanh_22
+  - first:
+      213: -4863449695444098806
+    second: run_xanh_23
+  - first:
+      213: 5188707783374437717
+    second: run_xanh_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: run_xanh_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 8
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 302e9b97d453bba10800000000000000
+      internalID: 1926191872501998083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_xanh_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 8
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb671e4dddc2a0100800000000000000
+      internalID: 74921675075974844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_xanh_2
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 8
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03baede2a3d3062d0800000000000000
+      internalID: -3287560407876719824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_xanh_4
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 8
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aa963a063590c160800000000000000
+      internalID: 7043793876539579040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_xanh_8
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 8
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f5981d469aca2230800000000000000
+      internalID: 3614924397805606386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_xanh_10
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 8
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65475a8b3d6978340800000000000000
+      internalID: 4866023758477227094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_xanh_12
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 8
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66cbe03fdeefb9b50800000000000000
+      internalID: 6601149976780127334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_xanh_16
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 8
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79091ec1a2bcc88d0800000000000000
+      internalID: -2842673883044015977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: da453e301eeca0e4194c8bb24db8543d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      run_xanh_0: 1926191872501998083
+      run_xanh_1: 74921675075974844
+      run_xanh_10: 4866023758477227094
+      run_xanh_11: 1142738125056213776
+      run_xanh_12: 6601149976780127334
+      run_xanh_13: -8481618730340987050
+      run_xanh_14: 7067170241840754237
+      run_xanh_15: 9018195350920869064
+      run_xanh_16: -2842673883044015977
+      run_xanh_17: -4317371765037993812
+      run_xanh_18: 3025287290383427274
+      run_xanh_19: -7941780525333207245
+      run_xanh_2: -3287560407876719824
+      run_xanh_20: 2662484855470696714
+      run_xanh_21: -7649981239361793026
+      run_xanh_22: -6227867318802050952
+      run_xanh_23: -4863449695444098806
+      run_xanh_24: 5188707783374437717
+      run_xanh_3: -5306836203281564384
+      run_xanh_4: 7043793876539579040
+      run_xanh_5: 2761698259413163707
+      run_xanh_6: -4501774006190014113
+      run_xanh_7: 568613953382617037
+      run_xanh_8: 3614924397805606386
+      run_xanh_9: -895895566827188581
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

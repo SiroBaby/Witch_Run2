@@ -1,0 +1,382 @@
+fileFormatVersion: 2
+guid: 31de03e78a308854eb34fd7d57b448f5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -668291123217619347
+    second: run_red_pink_0
+  - first:
+      213: -5490795084564410463
+    second: run_red_pink_1
+  - first:
+      213: -8387068074909205463
+    second: run_red_pink_2
+  - first:
+      213: -4387260752141422380
+    second: run_red_pink_3
+  - first:
+      213: -6050141178012571142
+    second: run_red_pink_4
+  - first:
+      213: -6608917734466312165
+    second: run_red_pink_5
+  - first:
+      213: -6520642985182623109
+    second: run_red_pink_6
+  - first:
+      213: -3950458755370066188
+    second: run_red_pink_7
+  - first:
+      213: 4045953230873509913
+    second: run_red_pink_8
+  - first:
+      213: 1268007549061931844
+    second: run_red_pink_9
+  - first:
+      213: -5487607347692642034
+    second: run_red_pink_10
+  - first:
+      213: -8185454314189098961
+    second: run_red_pink_11
+  - first:
+      213: -7918199960898646002
+    second: run_red_pink_12
+  - first:
+      213: -4284967274636018839
+    second: run_red_pink_13
+  - first:
+      213: -3979235552170143053
+    second: run_red_pink_14
+  - first:
+      213: -4708831329786711438
+    second: run_red_pink_15
+  - first:
+      213: 3069227900622021396
+    second: run_red_pink_16
+  - first:
+      213: -157405832823172993
+    second: run_red_pink_17
+  - first:
+      213: 2042884507813865059
+    second: run_red_pink_18
+  - first:
+      213: -4190957482639071829
+    second: run_red_pink_19
+  - first:
+      213: -5330570183558946870
+    second: run_red_pink_20
+  - first:
+      213: 4282468580109944299
+    second: run_red_pink_21
+  - first:
+      213: -7205186767586662145
+    second: run_red_pink_22
+  - first:
+      213: -5942536972138843282
+    second: run_red_pink_23
+  - first:
+      213: -8676224936574489459
+    second: run_red_pink_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: run_red_pink_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 8
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d662112a3c0c9b6f0800000000000000
+      internalID: -668291123217619347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_red_pink_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 8
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1afc31a46f6ccc3b0800000000000000
+      internalID: -5490795084564410463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_red_pink_2
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 8
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92c7400c5062b9b80800000000000000
+      internalID: -8387068074909205463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_red_pink_4
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 8
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9e89357a4990ca0800000000000000
+      internalID: -6050141178012571142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_red_pink_8
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 8
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9104f00f60d162830800000000000000
+      internalID: 4045953230873509913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_red_pink_10
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 8
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e01e4fd113a18d3b0800000000000000
+      internalID: -5487607347692642034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_red_pink_12
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 8
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e00df168617ec1290800000000000000
+      internalID: -7918199960898646002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_red_pink_16
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 8
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4132b4f9386189a20800000000000000
+      internalID: 3069227900622021396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 79976decb125b7740ab236c3cb4cef1c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      run_red_pink_0: -668291123217619347
+      run_red_pink_1: -5490795084564410463
+      run_red_pink_10: -5487607347692642034
+      run_red_pink_11: -8185454314189098961
+      run_red_pink_12: -7918199960898646002
+      run_red_pink_13: -4284967274636018839
+      run_red_pink_14: -3979235552170143053
+      run_red_pink_15: -4708831329786711438
+      run_red_pink_16: 3069227900622021396
+      run_red_pink_17: -157405832823172993
+      run_red_pink_18: 2042884507813865059
+      run_red_pink_19: -4190957482639071829
+      run_red_pink_2: -8387068074909205463
+      run_red_pink_20: -5330570183558946870
+      run_red_pink_21: 4282468580109944299
+      run_red_pink_22: -7205186767586662145
+      run_red_pink_23: -5942536972138843282
+      run_red_pink_24: -8676224936574489459
+      run_red_pink_3: -4387260752141422380
+      run_red_pink_4: -6050141178012571142
+      run_red_pink_5: -6608917734466312165
+      run_red_pink_6: -6520642985182623109
+      run_red_pink_7: -3950458755370066188
+      run_red_pink_8: 4045953230873509913
+      run_red_pink_9: 1268007549061931844
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
