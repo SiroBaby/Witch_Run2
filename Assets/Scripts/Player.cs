@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
     public float maxMaxHoldJumpTime = 0.4f; // Thời gian tối đa có thể giữ phím nhảy (giá trị tối đa)
     public float holdJumpTimer = 0.0f; // Bộ đếm thời gian giữ phím nhảy
     public float jumpGroundThreshold = 1; // Ngưỡng để coi người chơi là đang trên mặt đất
+    public bool isDead = false;
 
     // Start được gọi trước khi khung hình đầu tiên được cập nhật
     void Start()
@@ -79,6 +80,17 @@ public class Player : MonoBehaviour
         // Lấy vị trí hiện tại của người chơi
         Vector2 pos = transform.position;
 
+        if (isDead)
+        {
+            return;
+
+        }
+
+        if (pos.y < -20)
+        {
+            isDead = true;
+        }
+
         // Nếu người chơi không đang trên mặt đất
         if (!isGrounded)
         {
@@ -114,14 +126,31 @@ public class Player : MonoBehaviour
                 if (ground != null)
                 {
                     // Đặt chiều cao mặt đất, vị trí của người chơi, và đặt lại vận tốc dọc
-                    groundHeight = ground.groundHeight;
-                    pos.y = groundHeight;
-                    velocity.y = 0;
-                    isGrounded = true; // Người chơi bây giờ đang trên mặt đất
+                    if (pos.y >= ground.groundHeight)
+                    {
+                        groundHeight = ground.groundHeight;
+                        pos.y = groundHeight;
+                        velocity.y = 0;
+                        isGrounded = true; // Người chơi bây giờ đang trên mặt đất
+                    }
                 }
             }
             // Vẽ tia ray debug màu xanh lá cây
             Debug.DrawRay(rayOrigin, rayDirection * rayDistance, Color.green);
+
+            Vector2 wallOrigin = new Vector2(pos.x, pos.y);
+            RaycastHit2D wallHit = Physics2D.Raycast(wallOrigin, Vector2.right, velocity.x * Time.fixedDeltaTime);
+            if (wallHit.collider != null)
+            {
+                Ground ground = wallHit.collider.GetComponent<Ground>();
+                if (ground != null)
+                {
+                    if (pos.y < ground.groundHeight)
+                    {
+                        velocity.x = 0;
+                    }
+                }
+            }
         }
 
         // Cập nhật khoảng cách đã di chuyển của người chơi
@@ -159,8 +188,52 @@ public class Player : MonoBehaviour
             Debug.DrawRay(rayOrigin, rayDirection * rayDistance, Color.yellow);
         }
 
+
+        // Xử lý trục x của nhân vật
+        Vector2 obstOrigin = new Vector2(pos.x, pos.y);
+        RaycastHit2D obsHitx = Physics2D.Raycast(obstOrigin, Vector2.right, velocity.x * Time.fixedDeltaTime);
+        if (obsHitx.collider != null)
+        {
+            ObstacleWater obstacleWater = obsHitx.collider.GetComponent<ObstacleWater>();
+            ObstacleEnemy obstacleEnemy = obsHitx.collider.GetComponent<ObstacleEnemy>();
+            if (obstacleWater != null)
+            {
+                hitWater(obstacleWater);
+            }
+
+            if (obstacleEnemy != null)
+            {
+                hitEnemy(obstacleEnemy);
+            }
+
+        }
+
+        // Xử lý trục y của nhân vật
+        RaycastHit2D obsHity = Physics2D.Raycast(obstOrigin, Vector2.up, velocity.y * Time.fixedDeltaTime);
+        if (obsHity.collider != null)
+        {
+            ObstacleWater obstacleWater = obsHity.collider.GetComponent<ObstacleWater>();
+            if (obstacleWater != null)
+            {
+                hitWater(obstacleWater);
+            }
+        }
+
         // Cập nhật vị trí của người chơi
         transform.position = pos;
+    }
+
+
+    // Xử lý sự kiện khi đụng vào Quái
+    void hitEnemy(ObstacleEnemy obstacleEnemy)
+    {
+        isDead = true;
+    }
+
+    // Xử lý sự kiện khi di chuyển vào nước
+    void hitWater(ObstacleWater obstacleWater)
+    {
+        velocity.x = 20f;
     }
 
     // Phương thức cập nhật hình ảnh của nhân vật
