@@ -408,6 +408,7 @@ GameObject:
   - component: {fileID: 697490821}
   - component: {fileID: 697490820}
   - component: {fileID: 697490819}
+  - component: {fileID: 697490822}
   m_Layer: 0
   m_Name: Selected Character
   m_TagString: Untagged
@@ -429,6 +430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterDB: {fileID: 11400000, guid: 1d2eef82d8ee73c41b066d0f2a61ee7d, type: 2}
   artworkSprite: {fileID: 697490820}
+  characterAnimator: {fileID: 697490822}
 --- !u!212 &697490820
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -498,6 +500,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &697490822
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697490818}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b3cf2b288b4c10449919a80ef9299fe2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &764610074
 GameObject:
   m_ObjectHideFlags: 0

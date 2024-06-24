@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+using UnityEngine.UI; // Sử dụng UI của Unity
+using UnityEngine.SceneManagement; // Sử dụng SceneManager của Unity để chuyển scene
 
 public class CharacterManager : MonoBehaviour
 {
     public CharacterDatabase characterDB; // Database chứa danh sách các nhân vật
-
     public SpriteRenderer artworkSprite; // SpriteRenderer để hiển thị hình ảnh nhân vật
+    public Animator characterAnimator; // Animator để điều khiển animation của nhân vật
 
     private int selectedOption = 0; // Lựa chọn nhân vật hiện tại
 
-    // Start is called before the first frame update
     void Start()
     {
         // Kiểm tra xem đã có lựa chọn nhân vật được lưu hay chưa
@@ -25,7 +24,7 @@ public class CharacterManager : MonoBehaviour
             Load(); // Nếu đã có, tải lựa chọn từ PlayerPrefs
         }
 
-        UpdateCharacer(selectedOption); // Cập nhật hình ảnh cho nhân vật được chọn ban đầu
+        UpdateCharacter(selectedOption); // Cập nhật hình ảnh và animation cho nhân vật được chọn ban đầu
     }
 
     // Phương thức chuyển sang nhân vật kế tiếp
@@ -39,7 +38,7 @@ public class CharacterManager : MonoBehaviour
             selectedOption = 0;
         }
 
-        UpdateCharacer(selectedOption); // Cập nhật hình ảnh cho nhân vật mới được chọn
+        UpdateCharacter(selectedOption); // Cập nhật hình ảnh và animation cho nhân vật mới được chọn
         Save(); // Lưu lại lựa chọn mới
     }
 
@@ -54,16 +53,18 @@ public class CharacterManager : MonoBehaviour
             selectedOption = characterDB.CharacterCount - 1;
         }
 
-        UpdateCharacer(selectedOption); // Cập nhật hình ảnh cho nhân vật mới được chọn
+        UpdateCharacter(selectedOption); // Cập nhật hình ảnh và animation cho nhân vật mới được chọn
         Save(); // Lưu lại lựa chọn mới
     }
 
-    // Phương thức cập nhật hình ảnh của nhân vật
-    private void UpdateCharacer(int selectedOption)
+    // Phương thức cập nhật hình ảnh và animation của nhân vật
+    private void UpdateCharacter(int selectedOption)
     {
-        // Lấy thông tin nhân vật từ database
-        Character character = characterDB.GetCharacter(selectedOption);
+        Character character = characterDB.GetCharacter(selectedOption); // Lấy thông tin nhân vật từ database
         artworkSprite.sprite = character.characterSprite; // Thiết lập hình ảnh cho SpriteRenderer
+
+        // Update Animator Controller
+        characterAnimator.runtimeAnimatorController = character.animatorController;
     }
 
     // Phương thức tải lựa chọn nhân vật từ PlayerPrefs

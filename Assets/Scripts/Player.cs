@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     public CharacterDatabase characterDB; // Database chứa danh sách các nhân vật
 
     public SpriteRenderer artworkSprite; // SpriteRenderer để hiển thị hình ảnh nhân vật
+    public Animator characterAnimator;
 
     private int selectedOption = 0; // Lựa chọn nhân vật hiện tại
 
@@ -272,6 +273,7 @@ public class Player : MonoBehaviour
         // Lấy thông tin nhân vật từ database
         Character character = characterDB.GetCharacter(selectedOption);
         artworkSprite.sprite = character.characterSprite; // Thiết lập hình ảnh cho SpriteRenderer
+        characterAnimator.runtimeAnimatorController = character.animatorController;
     }
 
     // Phương thức tải lựa chọn nhân vật từ PlayerPrefs

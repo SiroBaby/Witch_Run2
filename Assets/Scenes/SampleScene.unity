@@ -11361,6 +11361,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 56952292109449010, guid: 9df73ff33b71cdb4c871927f5c751fb3, type: 3}
+      propertyPath: characterAnimator
+      value: 
+      objectReference: {fileID: 4835386679026693521}
+    - target: {fileID: 56952292109449010, guid: 9df73ff33b71cdb4c871927f5c751fb3, type: 3}
       propertyPath: groundLayerMask.m_Bits
       value: 64
       objectReference: {fileID: 0}
@@ -11417,6 +11421,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9df73ff33b71cdb4c871927f5c751fb3, type: 3}
+--- !u!95 &4835386679026693521 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8070028362822890942, guid: 9df73ff33b71cdb4c871927f5c751fb3, type: 3}
+  m_PrefabInstance: {fileID: 4835386679026693520}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
