@@ -8,5 +8,5 @@ public class Character  // Khai báo lớp Character
 {
 
     public Sprite characterSprite;  // Public field để lưu trữ Sprite của nhân vật, cho phép thiết lập từ Inspector của Unity
-
+    public RuntimeAnimatorController animatorController; // Animator Controller của nhân vật
 }
