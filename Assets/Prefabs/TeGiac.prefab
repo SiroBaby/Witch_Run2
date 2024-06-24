@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 683909209589474891}
   - component: {fileID: 7093480056422221008}
   - component: {fileID: 6943314516713788580}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TeGiac
   m_TagString: Untagged
   m_Icon: {fileID: 0}

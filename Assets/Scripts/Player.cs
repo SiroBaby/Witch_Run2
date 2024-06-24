@@ -28,10 +28,38 @@ public class Player : MonoBehaviour
     public float jumpGroundThreshold = 1; // Ngưỡng để coi người chơi là đang trên mặt đất
     public bool isDead = false;
 
+    public LayerMask groundLayerMask;
+    public LayerMask obstacleLayerMask;
+
     // Start được gọi trước khi khung hình đầu tiên được cập nhật
     void Start()
     {
-        // Mã khởi tạo có thể đặt ở đây
+        // Kiểm tra xem các thành phần cần thiết đã được gán trong Inspector hay chưa
+        Time.timeScale = 1f;
+        if (characterDB == null)
+        {
+            Debug.LogError("CharacterDatabase has not been assigned in the inspector!");
+            return;
+        }
+
+        if (artworkSprite == null)
+        {
+            Debug.LogError("SpriteRenderer has not been assigned in the inspector!");
+            return;
+        }
+
+        // Kiểm tra xem LayerMask đã được gán giá trị hay chưa
+        if (groundLayerMask.value == 0)
+        {
+            Debug.LogError("GroundLayerMask has not been assigned in the inspector!");
+            return;
+        }
+
+        if (obstacleLayerMask.value == 0)
+        {
+            Debug.LogError("ObstacleLayerMask has not been assigned in the inspector!");
+            return;
+        }
 
         // Kiểm tra xem đã có lựa chọn nhân vật được lưu hay chưa
         if (!PlayerPrefs.HasKey("selectedOption"))
@@ -82,6 +110,7 @@ public class Player : MonoBehaviour
 
         if (isDead)
         {
+            Time.timeScale = 0f;
             return;
 
         }
@@ -117,7 +146,7 @@ public class Player : MonoBehaviour
             Vector2 rayOrigin = new Vector2(pos.x + 0.7f, pos.y);
             Vector2 rayDirection = Vector2.up;
             float rayDistance = velocity.y * Time.fixedDeltaTime;
-            RaycastHit2D hit2D = Physics2D.Raycast(rayOrigin, rayDirection, rayDistance);
+            RaycastHit2D hit2D = Physics2D.Raycast(rayOrigin, rayDirection, rayDistance, groundLayerMask);
             // Nếu raycast chạm vào một collider
             if (hit2D.collider != null)
             {
@@ -139,7 +168,7 @@ public class Player : MonoBehaviour
             Debug.DrawRay(rayOrigin, rayDirection * rayDistance, Color.green);
 
             Vector2 wallOrigin = new Vector2(pos.x, pos.y);
-            RaycastHit2D wallHit = Physics2D.Raycast(wallOrigin, Vector2.right, velocity.x * Time.fixedDeltaTime);
+            RaycastHit2D wallHit = Physics2D.Raycast(wallOrigin, Vector2.right, velocity.x * Time.fixedDeltaTime, groundLayerMask);
             if (wallHit.collider != null)
             {
                 Ground ground = wallHit.collider.GetComponent<Ground>();
@@ -191,7 +220,7 @@ public class Player : MonoBehaviour
 
         // Xử lý trục x của nhân vật
         Vector2 obstOrigin = new Vector2(pos.x, pos.y);
-        RaycastHit2D obsHitx = Physics2D.Raycast(obstOrigin, Vector2.right, velocity.x * Time.fixedDeltaTime);
+        RaycastHit2D obsHitx = Physics2D.Raycast(obstOrigin, Vector2.right, velocity.x * Time.fixedDeltaTime, obstacleLayerMask);
         if (obsHitx.collider != null)
         {
             ObstacleWater obstacleWater = obsHitx.collider.GetComponent<ObstacleWater>();
@@ -209,7 +238,7 @@ public class Player : MonoBehaviour
         }
 
         // Xử lý trục y của nhân vật
-        RaycastHit2D obsHity = Physics2D.Raycast(obstOrigin, Vector2.up, velocity.y * Time.fixedDeltaTime);
+        RaycastHit2D obsHity = Physics2D.Raycast(obstOrigin, Vector2.up, velocity.y * Time.fixedDeltaTime, obstacleLayerMask);
         if (obsHity.collider != null)
         {
             ObstacleWater obstacleWater = obsHity.collider.GetComponent<ObstacleWater>();
@@ -228,6 +257,7 @@ public class Player : MonoBehaviour
     void hitEnemy(ObstacleEnemy obstacleEnemy)
     {
         isDead = true;
+        Time.timeScale = 0f;
     }
 
     // Xử lý sự kiện khi di chuyển vào nước
