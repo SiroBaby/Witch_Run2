@@ -278,6 +278,7 @@ public class Player : MonoBehaviour
     private void Load()
     {
         selectedOption = PlayerPrefs.GetInt("selectedOption");
+
     }
 
 }
